@@ -1,0 +1,6 @@
+SELECT albums.id as album_id,
+albums.title
+FROM albums
+JOIN artists
+ON albums.artist_id = artists.id
+WHERE artists.name = 'Nina Simone' AND albums.release_year > 1975;
